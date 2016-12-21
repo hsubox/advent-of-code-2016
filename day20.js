@@ -1050,7 +1050,7 @@ function findFirstValidIP(ranges) {
   }
   return -1;
 }
-assert(findFirstValidIP([[0, 2], [4, 7], [5, 8]], 3));
+assert.equal(findFirstValidIP([[0, 2], [4, 7], [5, 8]]), 3);
 console.log(findFirstValidIP(ranges));
 
 function findNumberOfValidIPs(ranges, max) {
@@ -1074,5 +1074,5 @@ function findNumberOfValidIPs(ranges, max) {
   return allowed;
 }
 
-assert(findNumberOfValidIPs([[0, 2], [4, 7], [5, 8]], 9));
+assert.equal(findNumberOfValidIPs([[0, 2], [4, 7], [5, 8]], 9), 2);
 console.log(findNumberOfValidIPs(ranges, 4294967295));
